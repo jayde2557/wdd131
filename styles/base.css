@@ -27,7 +27,7 @@ nav{
 }
 
 nav ul li a{
-    color:rgb(230, 221, 221);
+    color:rgb(191, 85, 39);
     text-decoration:none;
     font-weight:500;
 }
@@ -54,7 +54,7 @@ h1, h2{
 #course-title {
     text-align: center;
     align-items: center;
-    color: white;
+    color: black;
     font-size: x-large;
 }
 
