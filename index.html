@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="This is my WDD131 Landing home Page">
+    <meta name="author" content="Jayden Baidoo">
+    <title>WDD131 Dynamic Web Fundamentals - Jayden</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <header>
+        <span id="course-title"><strong>WDD 131 - Dynamic Web Fundamentals</strong></span>
+
+        <nav>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/jayden-baidoo-4b57a0271/" target="_blank">LinkedIn</a>
+            </li>
+
+            <li>
+                <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            </li>
+
+            <li>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">
+                    Scripture Reference
+                </a>
+            </li>
+
+            <li>
+                <a href="final_project.html">Final Project</a>
+            </li>
+        </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Jayden Baidoo</h1>
+
+        <div class="cards">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about">
+                    <p>My name is Jayden and I go by Jay. I was born in Ghana, where I currently
+                    reside. I am currently schooling in BYU-Idaho. My discipline is BSc Software Development. 
+                    I love to play the piano and do music production.
+                    </p>
+
+                    <img src="images/Jayden.jpg" alt="Picture of Jayden" class="portrait">
+
+                </div>
+
+                <h3 class="country-description">Accra, Ghana</h3>
+
+                <div class="about-gh">
+                    <figure>
+                        <img src="images/ghana.jpg" alt="Flag of Ghana" class="flag">
+
+                        <figcaption>Official Flag of Ghana</figcaption>
+                    </figure>
+
+                    <p>
+                        Ghana, often called the "Gateway to Africa," is a vibrant West African nation known for its deep-rooted history, stable democracy, and warm hospitality. As of 2024, it has a population of approximately 34.6 million and is one of the most peaceful countries on the continent.
+                    </p>
+                </div>
+                
+                
+
+                
+            </section>
+
+            <section class="card">
+                <h2>Useful Resources</h2>
+                <ul class="contact">
+                    <li><a href="http://github.com/">GitHub</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+                </ul>
+            </section>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+        <p>&copy <span id="currentyear"></span> Jayden Baidoo | GH</p>
+        <p id="last-modified"></p>
+
+    </footer>
     
 </body>
 </html>
