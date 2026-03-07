@@ -116,3 +116,15 @@ footer {
 footer p {
     text-align: center;
 }
+
+/*Responsiveness*/
+@media (max-width:700px){
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .about{
+        flex-direction:column;
+        text-align:center;
+    }
+}
