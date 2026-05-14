@@ -1,0 +1,8 @@
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1 rem auto;
+}
