@@ -99,8 +99,9 @@ figcaption {
 }
 
 footer {
-    color: bisque;
-    background-color: rgb(25, 112, 150);
+    color: rgb(255, 255, 255);
+    background-color: #1e355d;
+    padding: 1rem;
 }
 
 footer p {
