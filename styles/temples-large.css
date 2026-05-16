@@ -1,0 +1,23 @@
+@media (min-width: 37.5em) {
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    nav a {
+        padding: .5rem 1rem;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
