@@ -84,11 +84,13 @@ figure {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   
 }
 
 figure img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    display: block;
     border-radius: 8px;
 }
 
