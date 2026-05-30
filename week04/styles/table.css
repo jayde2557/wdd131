@@ -1,0 +1,59 @@
+:root {
+  --back2: hsla(0, 0%, 0%, 0.837);
+  --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsla(0, 2%, 40%, 0.752);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: var(--back2);
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+caption {
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--forelight);
+    caption-side: top;
+}
+
+th{
+	padding: 10px 15px;
+	border: 1px solid var(--borderlight);
+    color: var(--forelight);
+}
+
+.sub-header {
+    background-color: var(--border);
+    color: var(--forelight);
+    font-weight: bold;
+}
+
+th {
+	background-color: var(--back2);
+	font-size: larger;
+}
+
+td {
+    text-align: center;
+    color: var(--foredark);
+    padding: 7px 15px;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--forelight);
+}
