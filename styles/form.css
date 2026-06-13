@@ -47,7 +47,6 @@ header h1 {
   font-weight: 700;
 }
 
-/* ── Main / Card ── */
 main {
   flex: 1;
   padding: 1.5rem 1rem 2rem;
@@ -65,7 +64,6 @@ form {
   gap: var(--gap);
 }
 
-/* ── Field groups ── */
 .field-group,
 fieldset.field-group {
   display: flex;
@@ -88,7 +86,6 @@ legend {
   color: var(--clr-optional);
 }
 
-/* ── Inputs ── */
 select,
 input[type="date"],
 textarea,
@@ -103,6 +100,7 @@ input[type="text"] {
   width: 100%;
   transition: border-color 0.18s;
 }
+
 select:focus,
 input[type="date"]:focus,
 textarea:focus,
@@ -116,8 +114,6 @@ textarea {
   resize: vertical;
   min-height: 110px;
 }
-
-/* ── Star Rating ── */
 .rating-group legend {
   margin-bottom: 0.4rem;
 }
@@ -146,7 +142,6 @@ textarea {
   cursor: pointer;
 }
 
-/* ── Checkboxes ── */
 .checkbox-group legend {
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -196,7 +191,6 @@ textarea {
   outline: none;
 }
 
-/* ── Footer ── */
 footer {
   background: var(--clr-footer-bg);
   color: var(--clr-footer-text);
@@ -206,7 +200,6 @@ footer {
   line-height: 1.7;
 }
 
-/* ── Responsive ── */
 @media (min-width: 520px) {
   .stars {
     gap: 1.2rem;

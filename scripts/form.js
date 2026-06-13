@@ -1,4 +1,3 @@
-// Product data
 const products = [
   { id: "p01", name: "Cutters" },
   { id: "p02", name: "Claw Hammer" },
@@ -12,7 +11,6 @@ const products = [
   { id: "p10", name: "Flashlight" }
 ];
 
-// Populate select element dynamically
 const select = document.getElementById("product-name");
 products.forEach(product => {
   const option = document.createElement("option");
@@ -21,8 +19,5 @@ products.forEach(product => {
   select.appendChild(option);
 });
 
-// Footer: current year
 document.getElementById("currentyear").textContent = new Date().getFullYear();
-
-// Footer: last modification
 document.getElementById("last-modified").textContent = document.lastModified;

@@ -7,6 +7,7 @@
   <meta name="author" content="Jayden Baidoo" />
   <title>Product Review</title>
   <link rel="stylesheet" href="styles/form.css" />
+  <script src="scripts/form.js" defer></script>
 </head>
 <body>
 
@@ -15,7 +16,7 @@
   </header>
 
   <main>
-    <form method="get" action="review.html" id="review-form" novalidate>
+    <form method="get" action="review.html" id="review-form">
 
       <div class="field-group">
         <label for="product-name">Product Name</label>
@@ -33,19 +34,19 @@
           </div>
           <div class="star-option">
             <label for="rating-2">&#9734;&#9734;</label>
-            <input type="radio" id="rating-2" name="rating" value="2" />
+            <input type="radio" id="rating-2" name="rating" value="2" required />
           </div>
           <div class="star-option">
             <label for="rating-3">&#9734;&#9734;&#9734;</label>
-            <input type="radio" id="rating-3" name="rating" value="3" />
+            <input type="radio" id="rating-3" name="rating" value="3" required />
           </div>
           <div class="star-option">
             <label for="rating-4">&#9734;&#9734;&#9734;&#9734;</label>
-            <input type="radio" id="rating-4" name="rating" value="4" />
+            <input type="radio" id="rating-4" name="rating" value="4" required />
           </div>
           <div class="star-option">
             <label for="rating-5">&#9734;&#9734;&#9734;&#9734;&#9734;</label>
-            <input type="radio" id="rating-5" name="rating" value="5" />
+            <input type="radio" id="rating-5" name="rating" value="5" required />
           </div>
         </div>
       </fieldset>
@@ -97,6 +98,5 @@
     <p id="last-modified"></p>
   </footer>
 
-  <script src="scripts/form.js"></script>
 </body>
 </html>
