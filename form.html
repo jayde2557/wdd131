@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Product Review Form, WDD131 Assignment" />
+  <meta name="author" content="Jayden Baidoo" />
+  <title>Product Review</title>
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html" id="review-form" novalidate>
+
+      <div class="field-group">
+        <label for="product-name">Product Name</label>
+        <select id="product-name" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <fieldset class="field-group rating-group">
+        <legend>Overall Rating</legend>
+        <div class="stars">
+          <div class="star-option">
+            <label for="rating-1">&#9734;</label>
+            <input type="radio" id="rating-1" name="rating" value="1" required />
+          </div>
+          <div class="star-option">
+            <label for="rating-2">&#9734;&#9734;</label>
+            <input type="radio" id="rating-2" name="rating" value="2" />
+          </div>
+          <div class="star-option">
+            <label for="rating-3">&#9734;&#9734;&#9734;</label>
+            <input type="radio" id="rating-3" name="rating" value="3" />
+          </div>
+          <div class="star-option">
+            <label for="rating-4">&#9734;&#9734;&#9734;&#9734;</label>
+            <input type="radio" id="rating-4" name="rating" value="4" />
+          </div>
+          <div class="star-option">
+            <label for="rating-5">&#9734;&#9734;&#9734;&#9734;&#9734;</label>
+            <input type="radio" id="rating-5" name="rating" value="5" />
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="field-group">
+        <label for="install-date">Date of Installation</label>
+        <input type="date" id="install-date" name="installDate" required />
+      </div>
+
+      <fieldset class="field-group checkbox-group">
+        <legend>Which features did you find useful in the product? <em>(Check all that apply)</em></legend>
+        <div class="checkbox-option">
+          <input type="checkbox" id="feat-durability" name="features" value="Durability" />
+          <label for="feat-durability">Durability</label>
+        </div>
+        <div class="checkbox-option">
+          <input type="checkbox" id="feat-ease" name="features" value="Ease of Use" />
+          <label for="feat-ease">Ease of Use</label>
+        </div>
+        <div class="checkbox-option">
+          <input type="checkbox" id="feat-performance" name="features" value="Performance" />
+          <label for="feat-performance">Performance</label>
+        </div>
+        <div class="checkbox-option">
+          <input type="checkbox" id="feat-design" name="features" value="Design" />
+          <label for="feat-design">Design</label>
+        </div>
+      </fieldset>
+
+      <div class="field-group">
+        <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
+        <textarea id="written-review" name="writtenReview" rows="5" placeholder="Share your thoughts about this product..."></textarea>
+      </div>
+
+      <div class="field-group">
+        <label for="user-name">Your Name <span class="optional">(Optional)</span></label>
+        <input type="text" id="user-name" name="userName" placeholder="Enter your name" />
+      </div>
+
+      <div class="field-group">
+        <input type="submit" value="Post Review" class="submit-btn" />
+      </div>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Jayden Baidoo | GH</p>
+    <p id="last-modified"></p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>

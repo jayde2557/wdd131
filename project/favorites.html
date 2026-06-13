@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore popular Ghanaian foods, drinks, and snacks.">
+
+    <title>Taste of Ghana</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/favorites.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <h1>Taste of Ghana</h1>
+        <p>Discover. Learn. Enjoy.</p>
+    </div>
+
+    <button id="menu" aria-label="Open navigation">
+        ☰
+    </button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="foods.html">Foods</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <h2>Share Your Favorite Ghanaian Food</h2> 
+        <p> Tell us which Ghanaian food you enjoy most.
+
+        </p>
+    </section> 
+
+    <section class="favorites-section"> 
+        <form id="favorite-form"> 
+            <label for="name"> Your Name </label> 
+            <input type="text" id="name" name="name" required> 
+
+            <label for="food"> Favorite Food </label> 
+            <input type="text" id="food" name="food" required> 
+
+            <label for="reason"> Why do you like it? </label> 
+            <textarea id="reason" name="reason" rows="4" required> </textarea> 
+
+            <button type="submit"> Submit </button> 
+        </form> 
+
+    </section> 
+    <section class="submissions"> 
+        <h2>Community Favorites</h2> 
+        <div id="favorite-list"></div> 
+    </section>
+</main>
+
+<footer>
+
+    <p>
+        &copy; <span id="currentyear"></span> Taste of Ghana
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>

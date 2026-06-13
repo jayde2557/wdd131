@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore popular Ghanaian foods, drinks, and snacks.">
+
+    <title>Taste of Ghana</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <h1>Taste of Ghana</h1>
+        <p>Discover. Learn. Enjoy.</p>
+    </div>
+
+    <button id="menu" aria-label="Open navigation">
+        ☰
+    </button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="foods.html">Foods</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <h2>A Guide to Popular Ghanaian Foods</h2>
+
+            <p>
+                Explore delicious traditional dishes, drinks,
+                and snacks from Ghana while learning their
+                cultural significance.
+            </p>
+            <div class="hero-buttons">
+                <a href="foods.html" class="btn btn-first"><img src="images/fork-knife.svg" alt="Fork and knife"> Explore Foods</a>
+                <a href="favorites.html" class="btn btn-second"><img src="images/heart.svg" alt="Heart"> Share Your Favorite</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/hero-image.jpg" alt="Traditional Ghanaian food" loading="lazy">
+        </div>
+
+    </section>
+
+    <section class="categories">
+
+        <h2>Explore by Category</h2>
+
+        <div class="card-container">
+
+            <article class="card">
+                <div class="card-image-wrap">
+                    <img src="images/jollof-rice.jpg" alt="Jollof Rice dish">
+                </div>
+                <div class="card-content">
+                    <h3>Main Dishes</h3>
+                    <p>
+                        Learn about popular meals such as
+                        Jollof Rice, Fufu, Waakye, and Banku.
+                    </p>
+                    <a href="foods.html#main-dishes" >Learn More →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image-wrap">
+                    <img src="images/sobolo.jpg" alt="Sobolo drink">
+                </div>
+                <div class="card-content">
+                    <h3>Drinks</h3>
+                    <p>
+                        Discover refreshing beverages like
+                        Sobolo and Asaana.
+                    </p>
+                    <a href="foods.html#drinks" >Learn More →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image-wrap">
+                    <img src="images/snacks.jpg" alt="Kelewele snack">
+                </div>
+                <div class="card-content">
+                    <h3>Snacks</h3>
+                    <p>
+                        Explore beloved Ghanaian snacks
+                        enjoyed throughout the country.
+                    </p>
+                    <a href="foods.html#snacks" >Learn More →</a>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <div class="info">
+        <div class="info-content">
+            <h3>Fun Fact</h3>
+            <p id="fact">
+                Loading fact...
+            </p>
+
+        </div>
+
+        <div class="info-content">
+            <h3>Share Your Experience</h3>
+            <p>
+                Have a favorite Ghanaian dish or recipe? Share it with our community!
+            </p>
+            <a href="favorites.html" class="btn btn-first"><img src="images/heart.svg" alt="Heart"> Share Your Favorite</a>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; <span id="currentyear"></span> Taste of Ghana
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>

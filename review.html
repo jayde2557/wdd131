@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Product Review Form, WDD131 Assignment" />
+  <meta name="author" content="Jayden Baidoo" />
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/form.css" />
+  <link rel="stylesheet" href="styles/review.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <div class="confirmation-card">
+      <div class="checkmark" aria-hidden="true">&#10003;</div>
+      <h2>Thank you for your review!</h2>
+      <p class="subtext">Your feedback has been submitted successfully.</p>
+
+      <div class="summary" id="summary"></div>
+
+      <p class="counter-text">Total reviews submitted: <strong id="review-count">0</strong></p>
+
+      <a href="form.html" class="back-btn">Submit Another Review</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Jayden Baidoo | GH</p>
+    <p id="last-modified"></p>
+  </footer>
+
+  <script src="scripts/review.js"></script>
+</body>
+</html>

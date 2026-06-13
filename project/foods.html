@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore popular Ghanaian foods, drinks, and snacks.">
+
+    <title>Taste of Ghana</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/foods.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <h1>Taste of Ghana</h1>
+        <p>Discover. Learn. Enjoy.</p>
+    </div>
+
+    <button id="menu" aria-label="Open navigation">
+        ☰
+    </button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="foods.html">Foods</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-banner">
+        <h2>Popular Ghanaian Foods</h2>
+        <p>
+            Discover traditional meals enjoyed across Ghana,
+            their ingredients, and cultural significance.
+        </p>
+    </section>
+
+    <section class="filter-section">
+        <label for="category">Filter by Category:</label>
+
+        <select id="category">
+            <option value="all">All Foods</option>
+            <option value="Main Dish">Main Dishes</option>
+            <option value="Drink">Drinks</option>
+            <option value="Snack">Snacks</option>
+        </select>
+    </section>
+
+    <section class="food-container"></section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; <span id="currentyear"></span> Taste of Ghana
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>

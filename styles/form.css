@@ -1,0 +1,214 @@
+:root {
+  --clr-bg: #f0edf4;
+  --clr-header: #2b0a3d;
+  --clr-header-text: #ffffff;
+  --clr-card: #e5e0ec;
+  --clr-border: #c4bcd0;
+  --clr-text: #1a1a2e;
+  --clr-label: #2b0a3d;
+  --clr-optional: #6a5acd;
+  --clr-input-bg: #ffffff;
+  --clr-star: #2b0a3d;
+  --clr-submit-bg: #f5f3f7;
+  --clr-submit-border: #2b0a3d;
+  --clr-footer-bg: #1a1a2e;
+  --clr-footer-text: #ffffff;
+
+  --font-body: 'Segoe UI', system-ui, sans-serif;
+  --radius: 6px;
+  --gap: 1.4rem;
+}
+
+*
+{ 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--clr-header);
+  padding: 1.4rem 1rem;
+  text-align: center;
+}
+header h1 {
+  color: var(--clr-header-text);
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+/* ── Main / Card ── */
+main {
+  flex: 1;
+  padding: 1.5rem 1rem 2rem;
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  background: var(--clr-card);
+  border-radius: var(--radius);
+  padding: 1.8rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+/* ── Field groups ── */
+.field-group,
+fieldset.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: none;
+  padding: 0;
+}
+
+label,
+legend {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--clr-label);
+}
+
+.optional {
+  font-weight: 400;
+  font-size: 0.82rem;
+  color: var(--clr-optional);
+}
+
+/* ── Inputs ── */
+select,
+input[type="date"],
+textarea,
+input[type="text"] {
+  background: var(--clr-input-bg);
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--radius);
+  padding: 0.55rem 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--clr-text);
+  width: 100%;
+  transition: border-color 0.18s;
+}
+select:focus,
+input[type="date"]:focus,
+textarea:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--clr-header);
+  box-shadow: 0 0 0 3px rgba(43, 10, 61, 0.15);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* ── Star Rating ── */
+.rating-group legend {
+  margin-bottom: 0.4rem;
+}
+.stars {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.star-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+.star-option label {
+  font-size: 0.9rem;
+  color: var(--clr-star);
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+.star-option input[type="radio"] {
+  accent-color: var(--clr-header);
+  width: 1.15rem;
+  height: 1.15rem;
+  cursor: pointer;
+}
+
+/* ── Checkboxes ── */
+.checkbox-group legend {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.checkbox-group legend em {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.88rem;
+}
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.25rem 0;
+}
+.checkbox-option input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--clr-header);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.checkbox-option label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* ── Submit ── */
+.submit-btn {
+  width: 100%;
+  padding: 0.85rem;
+  background: var(--clr-submit-bg);
+  border: 2px solid var(--clr-submit-border);
+  border-radius: var(--radius);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--clr-text);
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  letter-spacing: 0.02em;
+}
+.submit-btn:hover,
+.submit-btn:focus {
+  background: var(--clr-header);
+  color: #fff;
+  outline: none;
+}
+
+/* ── Footer ── */
+footer {
+  background: var(--clr-footer-bg);
+  color: var(--clr-footer-text);
+  text-align: center;
+  padding: 1.1rem 1rem;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* ── Responsive ── */
+@media (min-width: 520px) {
+  .stars {
+    gap: 1.2rem;
+  }
+}
