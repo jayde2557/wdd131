@@ -4,7 +4,7 @@ const foods = [
         category: "Main Dish",
         ingredients: "Rice, tomatoes, onions, peppers, spices",
         description: "A flavorful one-pot rice dish enjoyed throughout West Africa.",
-        image: "images/jollof-rice.jpg"
+        image: "images/jollof-rice.webp"
     },
 
     {
@@ -12,7 +12,7 @@ const foods = [
         category: "Main Dish",
         ingredients: "Cassava, plantain",
         description: "A soft starchy dish traditionally served with soup.",
-        image: "images/fufu.jpg"
+        image: "images/fufu.webp"
     },
 
     {
@@ -20,7 +20,7 @@ const foods = [
         category: "Main Dish",
         ingredients: "Rice, beans, millet leaves",
         description: "A popular Ghanaian meal usually served with several side dishes.",
-        image: "images/waakye.jpg"
+        image: "images/waakye.webp"
     },
 
     {
@@ -28,7 +28,7 @@ const foods = [
         category: "Drink",
         ingredients: "Hibiscus leaves, ginger, cloves",
         description: "A refreshing traditional drink with a rich red color.",
-        image: "images/sobolo.jpg"
+        image: "images/sobolo.webp"
     },
 
     {
@@ -36,7 +36,7 @@ const foods = [
         category: "Snack",
         ingredients: "Flour, sugar, yeast",
         description: "A sweet fried dough snack enjoyed throughout Ghana.",
-        image: "images/bofrot.png"
+        image: "images/bofrot.webp"
     },
 
     {
@@ -44,7 +44,7 @@ const foods = [
         category: "Snack",
         ingredients: "Plantains, ginger, pepper",
         description: "Spicy fried plantains often sold as street food.",
-        image: "images/kelewele.jpg"
+        image: "images/kelewele.webp"
     },
 
     {
@@ -52,7 +52,7 @@ const foods = [
         category: "Drink",
         ingredients: "Millet, sugar, water",
         description: "A traditional fermented millet drink with a tangy flavor.",
-        image: "images/lamugin.jpg"
+        image: "images/lamugin.webp"
     }
 ];
 
@@ -108,3 +108,7 @@ categorySelect.addEventListener("change", () => {
         displayFoods(filteredFoods);
     }
 });
+
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+
+document.querySelector("#lastModified").textContent = `Last Modified: ${document.lastModified}`;

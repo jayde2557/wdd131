@@ -70,13 +70,15 @@ header {
     padding: .5rem;
 }
 
-.navigation a:hover, .navigation a.active {
+.navigation a:hover{
     color: var(--gold);
+    border-radius: 5px;
 }
 
 .navigation a.active {
     border-bottom: 2px solid var(--gold);
-    padding-bottom: 2px;
+    padding-bottom: 4px;
+    border-radius: 5px;
 }
 
 

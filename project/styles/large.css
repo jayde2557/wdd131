@@ -26,6 +26,12 @@
         margin: 0 auto;
     }
 
+    .hero-image {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+
     .card-container {
         grid-template-columns: repeat(3, 1fr);
     }
